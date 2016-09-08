@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file alias="btn_icon">1.png</file>
+        <file alias="app_icon">LSI.ico</file>
+    </qresource>
+</RCC>

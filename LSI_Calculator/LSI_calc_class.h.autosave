@@ -1,0 +1,76 @@
+
+#include <QtWidgets>
+
+class LSI_calc_class: public QObject {
+
+    Q_OBJECT
+
+    bool isClickedOper;
+    long long  op1=0,op2=0;
+    QString str1;
+
+    //text edit widget
+    QLineEdit *le;
+    QTextEdit *txt;
+
+
+
+    //button widgets
+    QPushButton *btnMC;
+    QPushButton *btnMR;
+    QPushButton *btnMS;
+    QPushButton *btnMPlus;
+    QPushButton *btnBackSp;
+    QPushButton *btnCE;
+    QPushButton *btnC;
+    QPushButton *btnPlMin;
+    QPushButton *btnSQRT;
+    QPushButton *btn1;
+    QPushButton *btn2;
+    QPushButton *btn3;
+    QPushButton *btn4;
+    QPushButton *btn5;
+    QPushButton *btn6;
+    QPushButton *btn7;
+    QPushButton *btn8;
+    QPushButton *btn9;
+    QPushButton *btn0;
+    QPushButton *btnDivis;
+    QPushButton *btnPerc;
+    QPushButton *btnMult;
+    QPushButton *btn1DivX;
+    QPushButton *btnMinus;
+    QPushButton *btnPlus;
+    QPushButton *btnRes;
+    QPushButton *btnDot;
+
+public:
+    //main layout
+    QGridLayout *lay1;
+
+    //constructor
+    explicit LSI_calc_class(QObject *parent=0);
+
+
+public slots:
+    void plus();
+    void result();
+    void textEdit();
+
+
+};
+
+
+class myLineEdit: public QWidget {
+    
+public:
+    explicit meLineEdit(QWidget *parent=0);
+    
+protected:
+    void keyPressEvent(QKeyEvent *event);
+    
+};
+
+
+
+
