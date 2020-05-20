@@ -1,2 +1,2 @@
 # LSI_calculator
-Simple calculator on Qt framework
+Simple calculator powered by Qt framework
